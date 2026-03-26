@@ -1,11 +1,12 @@
 import cv2
 
-def detect_movement(previous_frame, current_gray):
-    if previous_frame is None:
-        return None
+def display_frame(frame, status_text, color):
+    cv2.putText(frame, status_text, (50, 50),
+                cv2.FONT_HERSHEY_SIMPLEX, 1, color, 3)
 
-    difference = cv2.absdiff(previous_frame, current_gray)
-    _, threshold = cv2.threshold(difference, 25, 255, cv2.THRESH_BINARY)
+    cv2.imshow("Study Focus Detector", frame)
 
-    movement = threshold.sum()
-    return movement
+    key = cv2.waitKey(1)
+    if key == 27:   # ESC
+        return False
+    return True
