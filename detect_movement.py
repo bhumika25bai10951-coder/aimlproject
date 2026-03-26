@@ -6,4 +6,4 @@ def detect_movement(previous_frame, current_gray):
     _, threshold = cv2.threshold(difference, 25, 255, cv2.THRESH_BINARY)
 
     movement = threshold.sum()
-    return movement, None, None
+    return movement
