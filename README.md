@@ -1,4 +1,4 @@
-# aimlproject
+# aimlprojecthttps://github.com/bhumika25bai10951-coder/aimlproject/edit/main/README.md
 Study Focus Detector (OpenCV Project)
 
  Overview
@@ -32,7 +32,7 @@ Technologies Used
 ---
  Modules Explanation
 
- 1. camera_module.py
+ 1. initialize_camera.py
 Handles:
 - Opening the webcam
 - Capturing frames
@@ -40,7 +40,7 @@ Handles:
 
 ---
 
-2. movement_module.py
+2. detect_movement.py
 Handles:
 - Frame difference calculation
 - Threshold conversion
@@ -48,7 +48,7 @@ Handles:
 
 ---
 
-3. focus_module.py
+3. defocus.py
 Handles:
 - Deciding if the user is focused or distracted
 
