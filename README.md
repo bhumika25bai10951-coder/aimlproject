@@ -18,7 +18,7 @@ This project is developed using Python and OpenCV.
 - Displays real-time status:
   -  FOCUSED
   -  DISTRACTED
-  -  STARTING...
+  -  STARTING
 - Clean modular structure (5 separate files)
 - Exit using ESC key
 
@@ -48,13 +48,13 @@ Handles:
 
 ---
 
-3. defocus.py
+3. detect_focus.py
 Handles:
 - Deciding if the user is focused or distracted
 
 ---
 
- 4. display_module.py
+ 4. caputure_frame.py
 Handles:
 - Displaying text on webcam feed
 - Showing the output window
@@ -62,7 +62,7 @@ Handles:
 
 ---
 
- 5. main.py
+ 5. display_output.py
 Main file that connects all modules and runs the program loop.
 ---
 
